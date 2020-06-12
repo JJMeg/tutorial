@@ -5,7 +5,7 @@ import org.apache.flink.api.scala._
 // 批处理wordcount程序
 object wordcount {
   def main(args: Array[String]): Unit = {
-    //    创建执行环境
+    //    创建批处理执行环境
     val env = ExecutionEnvironment.getExecutionEnvironment
 
     //    从文件中读取数据

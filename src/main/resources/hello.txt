@@ -1,6 +1,6 @@
-hello world
-hello flink
-hello spark
-how are you
-fine
-thx
+sensor_1, 1547718199, 25.6
+sensor_2, 1547718239, 24.6
+sensor_3, 1547718249, 32.6
+sensor_4, 1547718259, 36.6
+sensor_5, 1547718269, 38.6
+sensor_5, 1547718269, 38.6
