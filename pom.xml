@@ -73,12 +73,28 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.61</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.11.2</version>
+            <scope>compile</scope>
+        </dependency>
 
 
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>log4j.xml</include>
+                </includes>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <targetPath>conf</targetPath>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
@@ -121,6 +137,8 @@
             </plugin>
 
         </plugins>
+
+
     </build>
 
 </project>
